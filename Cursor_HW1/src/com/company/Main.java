@@ -15,6 +15,7 @@ public class Main {
         System.out.println(Div);
     }
 }
+
 class Byte {
 
     public static void main(String[] args) {
@@ -30,6 +31,7 @@ class Byte {
         System.out.println(Div);
     }
 }
+
 class Short {
 
     public static void main(String[] args) {
@@ -45,6 +47,7 @@ class Short {
         System.out.println(Div);
     }
 }
+
 class Double {
 
     public static void main(String[] args) {
@@ -60,6 +63,7 @@ class Double {
         System.out.println(Div);
     }
 }
+
 class Float {
 
     public static void main(String[] args) {
