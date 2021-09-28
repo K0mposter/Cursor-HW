@@ -7,8 +7,10 @@ public class Car {
 
         myCar.getCarInfo ();
         myCar.start ();
-        myCar.setCurrentSpeed (50);
+        myCar.setCurrentSpeed (130);
         myCar.getCarInfo ();
+        myCar.setCruiseControl(true);
+        myCar.getCarInfo();
         myCar.setEngineStatus (false);
         myCar.getCarInfo ();
         myCar.stop ();
@@ -18,6 +20,7 @@ public class Car {
     static class Vehicle {
         private boolean engineStatus = false;
         private double currentSpeed = 0;
+        private boolean cruiseControl = false;
 
         public Vehicle (boolean engineStatus, double currentSpeed) {
             this.engineStatus = engineStatus;
@@ -36,12 +39,19 @@ public class Car {
             System.out.println ("Engine started");
         }
 
+
         public void setEngineStatus (boolean engineStatus) {
             this.engineStatus = engineStatus;
         }
 
         public void setCurrentSpeed (double currentSpeed) {
             this.currentSpeed = currentSpeed;
+        }
+        public void setCruiseControl(boolean cruiseControl) {
+            engineStatus = true;
+            if (currentSpeed >=40 && currentSpeed<=120){
+            System.out.println("Cruise control online");}
+            else System.out.println("speed must be over 39 kmh and below 120kmh" +"\n"+ "Cruise control offline");
         }
 
         public void getCarInfo () {
