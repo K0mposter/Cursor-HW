@@ -1,6 +1,7 @@
 package HW3;
+
 public class Moneycalc {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Money money1 = new Money(2L, (byte) 60);
         Money money2 = new Money(2L, (byte) 25);
         Money moneyOperationResult = money1.addition(money2);
@@ -27,7 +28,7 @@ class Money {
 
     public Money(long hrn, byte kop) {
         if (kop < 0 || hrn < 0)
-            System.out.println ("Money values can`t be negative.");
+            System.out.println("Money values can`t be negative.");
         if (kop == 100) {
             hrn++;
             kop = 0;
