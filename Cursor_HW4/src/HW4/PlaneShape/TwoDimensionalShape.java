@@ -1,4 +1,4 @@
-package HW4;
+package HW4.PlaneShape;
 
 public class TwoDimensionalShape {
     private double x;

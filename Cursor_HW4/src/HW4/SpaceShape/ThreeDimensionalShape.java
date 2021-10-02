@@ -1,6 +1,6 @@
-package HW4;
+package HW4.SpaceShape;
 
-import HW4.TwoDimensionalShape;
+import HW4.PlaneShape.TwoDimensionalShape;
 
 public class ThreeDimensionalShape extends TwoDimensionalShape {
     private double z;
