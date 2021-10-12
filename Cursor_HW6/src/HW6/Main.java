@@ -34,19 +34,26 @@ public class Main {
         FruitList1.add("Lemon");
         FruitList1.add("Mango");
         System.out.println(FruitList1);
-        boolean isReplaced = false;
-        for (int i = 0; i < FruitList1.size(); i++) {
-            if (FruitList1.get(i).equals("Orange")){
-                FruitList1.set(i,"Grapefruit");
-                isReplaced = true;
-            }
-        }
-        System.out.println(FruitList1);
-        if (isReplaced = true);{
-            System.out.println("there is no value");
+        if (FruitList1.contains("Orange")) {
+            int orangeIndex = FruitList1.indexOf("Orange");
+            FruitList1.set(orangeIndex, "Grapefruit");
+        } else {
+            System.out.println("value not present");
         }
 
 
+        ArrayList<Integer> CompareList1 = new ArrayList<>();
+        CompareList1.add(124);
+        CompareList1.add(12);
+        CompareList1.add(4);
+        System.out.println(CompareList1);
+        ArrayList<Integer> CompareList2 = new ArrayList<>();
+        CompareList2.add(14);
+        CompareList2.add(4);
+        CompareList2.add(264);
+        System.out.println(CompareList2);
+        CompareList1.retainAll(CompareList2);
+        System.out.println(CompareList1);
 
     }
 }
