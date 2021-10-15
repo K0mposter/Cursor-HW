@@ -3,7 +3,7 @@ package HW9;
 import java.util.ArrayList;
 
 public class MyArrayList<E> extends ArrayList<E> {
-    private static final int DEFAULT_ARRAYLIST_CAPACITY = 10;
+    private static final int DEFAULT_ARRAYLIST_CAPACITY = 15;
     private ArrayList<E> myArraylist;
     private int size;
 
