@@ -5,10 +5,10 @@ import java.util.Objects;
 public class Person {
     private final String name;
     private final int age;
-    private final Gender gender;
+    private final GENDER gender;
 
 
-    public Person(String name, int age, Gender gender) {
+    public Person(String name, int age, GENDER gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -22,7 +22,7 @@ public class Person {
         return age;
     }
 
-    public Gender getGender() {
+    public GENDER getGender() {
         return gender;
     }
 
@@ -41,7 +41,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person " + name  +
+        return "Person " + name +
                 " - " + gender;
     }
 }
