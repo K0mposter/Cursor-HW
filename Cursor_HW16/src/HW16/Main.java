@@ -21,8 +21,9 @@ class CounterThread implements Runnable {
                         res.counter);
                 res.counter++;
                 try {
-                    if(i!=10){
-                    res.wait();}
+                    if (i != 10) {
+                        res.wait();
+                    }
                 } catch (InterruptedException e) {
                 }
             }
